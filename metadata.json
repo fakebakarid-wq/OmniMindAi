@@ -1,0 +1,8 @@
+{
+  "name": "OmniMind AI",
+  "description": "A professional, all-knowing AI assistant capable of reasoning, coding, math, image analysis, image editing, and real-time voice conversation.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
