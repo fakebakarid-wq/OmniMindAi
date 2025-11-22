@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentMode, onModeChange, user, onLo
   return (
     <>
       {/* Mobile Bottom Navigation (9:16 Optimization) */}
-      <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800 flex justify-around items-center h-16 shrink-0 px-2 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.3)]">
+      <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800 flex justify-around items-center h-16 shrink-0 px-1 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.3)]">
         {navItems.map((item) => (
           <button
             key={item.mode}
@@ -34,7 +34,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentMode, onModeChange, user, onLo
             <div className={`p-1 rounded-full ${currentMode === item.mode ? 'bg-emerald-500/10' : 'bg-transparent'}`}>
               <item.icon size={20} className={currentMode === item.mode ? 'stroke-[2.5px]' : 'stroke-2'} />
             </div>
-            <span className="text-[10px] font-medium tracking-wide">{item.label}</span>
+            <span className="text-[9px] font-medium tracking-wide">{item.label}</span>
           </button>
         ))}
       </div>
